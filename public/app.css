@@ -30,7 +30,7 @@ form {
   background-color: #8063fa;
 }
 
-input[type="text"] {
+input[type='text'] {
   flex-grow: 1;
   border-width: 0 0 1px 0;
   margin: 15px 10px 15px 15px;
@@ -45,16 +45,16 @@ input[type="text"] {
   outline: none;
 }
 
-input[type="text"]::-webkit-input-placeholder {
+input[type='text']::-webkit-input-placeholder {
   color: #c7bcf8;
   letter-spacing: 2px;
 }
 
-input[type="text"]:focus {
+input[type='text']:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-input[type="submit"] {
+input[type='submit'] {
   display: block;
   font-size: 0.6em;
   margin: 15px 15px 15px 0;
@@ -71,7 +71,7 @@ input[type="submit"] {
 }
 
 button,
-input[type="submit"] {
+input[type='submit'] {
   outline: none;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -193,7 +193,7 @@ svg {
 }
 
 .stopwatch button:hover,
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background: #fff;
   color: #44338d;
   cursor: pointer;
