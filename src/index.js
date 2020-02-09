@@ -33,7 +33,9 @@ class Counter extends React.Component {
   };
 
   incrementScore() {
-    console.log('Hey');
+    this.setState({
+      score: this.state.score + 1,
+    });
   }
 
   render() {
