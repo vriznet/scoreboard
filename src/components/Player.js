@@ -3,23 +3,17 @@ import Counter from './Counter';
 
 class Player extends PureComponent {
   render() {
+    const { name, id, score, index, removePlayer, changeScore } = this.props;
     return (
       <div className="player">
         <span className="player-name">
-          <button
-            className="remove-player"
-            onClick={() => this.props.removePlayer(this.props.id)}
-          >
+          <button className="remove-player" onClick={() => removePlayer(id)}>
             ✖
           </button>
-          {this.props.name}
+          {name}
         </span>
 
-        <Counter
-          score={this.props.score}
-          changeScore={this.props.changeScore}
-          index={this.props.index}
-        />
+        <Counter score={score} changeScore={changeScore} index={index} />
       </div>
     );
   }
