@@ -6,7 +6,7 @@ class AddPlayerForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.addPlayer(this.playerInput.current.value);
-    e.currenTarget.reset();
+    e.currentTarget.reset();
   };
 
   render() {
