@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Provider, Consumer } from './Context';
+import { Provider } from './Context';
 import Header from './Header';
 import Player from './Player';
 import AddPlayerForm from './AddPlayerForm';
