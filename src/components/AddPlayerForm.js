@@ -7,10 +7,10 @@ class AddPlayerForm extends Component {
   render() {
     return (
       <Consumer>
-        {context => {
+        {({ actions }) => {
           const handleSubmit = e => {
             e.preventDefault();
-            context.actions.addPlayer(this.playerInput.current.value);
+            actions.addPlayer(this.playerInput.current.value);
             e.currentTarget.reset();
           };
           return (
